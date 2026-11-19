@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "series": "누구나쉽게",
   "channel": "TechKwon",
   "principles": [
@@ -23,12 +23,12 @@
   "entries": [
     {
       "id": "ep16-webgl2-rematch",
-      "episode": null,
-      "date": "2026-11-19",
-      "status": "진행 중",
-      "title": "Gemini 4 Neon vs Hydrogen vs Claude Sonnet 5.5 vs GPT-6.2 Sol — WebGL2 5과제 재대결",
-      "youtube": null,
-      "site": null,
+      "episode": 16,
+      "date": "2026-11-20",
+      "status": "11/20 07:00 공개",
+      "title": "'Opus 이겼다'던 Gemini 4 Neon, 이름 가리고 붙였더니 꼴찌… 구글 자랑 데모로 재대결하자 반전 (vs GPT-6.2 Sol)",
+      "youtube": "https://youtu.be/V39EiW1V1tQ",
+      "site": "https://techkwon.github.io/neon-webgl-rematch/",
       "links": [],
       "type": "모델 대결",
       "models": [
@@ -49,12 +49,19 @@
           "family": "GPT"
         }
       ],
-      "takeaway": "실험 중입니다. 결과가 나오면 이 칸을 채웁니다.",
-      "highlights": [],
+      "takeaway": "내 WebGL2 과제 5판에선 Neon이 꼴찌(자기 표 포함)였고, 구글이 발표 글에서 자랑한 데모 3개로 다시 붙이자 Neon이 Hydrogen은 이겼지만 1위는 GPT-6.2 Sol이었습니다.",
+      "highlights": [
+        "1부 내 과제 5판: Sonnet 60 · Sol 54 · Hydrogen 49 · Neon 37",
+        "2부 구글 데모 3판: Sol 37 · Sonnet 31 · Neon 29 · Hydrogen 23",
+        "8판 합계: Sonnet 91 · Sol 91 · Hydrogen 72 · Neon 66",
+        "비용 합계: Sol $5.51 · Hydrogen $7.33 · Neon $15.03 · Sonnet $17.31"
+      ],
       "tags": [
         "원샷 대결",
         "블라인드 심사",
-        "WebGL2"
+        "WebGL2",
+        "비용",
+        "자기 표 제외"
       ]
     },
     {
