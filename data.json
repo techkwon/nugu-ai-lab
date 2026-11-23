@@ -598,10 +598,10 @@
   {
    "id": "ep18-gemini-task-connectors",
    "episode": 18,
-   "date": "2026-11-23",
-   "status": "제작 중",
+   "date": "2026-11-24",
+   "status": "11/24 07:00 공개",
    "title": "이제 제미나이가 캔바, 카훗, 노션, 패들렛을 마음대로 조종한다 그런데 한국은 무료라고?",
-   "youtube": "",
+   "youtube": "https://youtu.be/G5C90lpMCtc",
    "site": "https://techkwon.github.io/gemini-task-connectors/",
    "links": [],
    "type": "기능 실습",
