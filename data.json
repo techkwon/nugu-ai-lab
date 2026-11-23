@@ -1,599 +1,630 @@
 {
-  "updated": "2026-11-23",
-  "series": "누구나쉽게",
-  "channel": "TechKwon",
-  "principles": [
+ "updated": "2026-11-23",
+ "series": "누구나쉽게",
+ "channel": "TechKwon",
+ "principles": [
+  {
+   "title": "같은 프롬프트, 한 번에",
+   "body": "모든 모델에 똑같은 프롬프트를 한 번만 보내고(원샷), 중간에 고쳐 달라고 하지 않습니다. 녹화도 같은 브라우저·같은 입력 스크립트로 찍습니다."
+  },
+  {
+   "title": "이름을 가린 AI 심사, 자기 표는 빼고 다시 본다",
+   "body": "결과물은 A·B·C·D로 섞은 시트로 심사합니다. 심사위원이 선수이기도 하면 자기 결과에 준 점수를 뺀 순위도 함께 공개합니다."
+  },
+  {
+   "title": "프롬프트·결과물·녹화 전부 공개",
+   "body": "점수만 보여 주지 않습니다. 프롬프트 원문, 모델이 만든 파일 그대로, 녹화 영상, 심사 답변을 결과 사이트에 올립니다. 추정치는 추정이라고 적습니다."
+  },
+  {
+   "title": "점수보다 먼저: 둘 다 같은 도구를 썼나?",
+   "body": "15편에서 GPT는 명령 실행·브라우저로 자기 결과를 보고 고쳤고 Claude는 화면을 못 봤습니다. 같은 도구를 주자 순위가 뒤집혔습니다. 비교 전에 도구·설정·지침 파일부터 맞춥니다."
+  }
+ ],
+ "entries": [
+  {
+   "id": "ep17-gemini-gif",
+   "episode": 17,
+   "date": "2026-11-23",
+   "status": "11/23 공개",
+   "title": "충격, 제미나이로 GIF를 만들 수 있었어? 그것도 무료로 (챗GPT랑 같은 프롬프트로 비교)",
+   "youtube": "https://youtu.be/EK36slCjo2I",
+   "site": "https://techkwon.github.io/gemini-vs-chatgpt-gif/",
+   "links": [],
+   "type": "기능 비교",
+   "models": [
     {
-      "title": "같은 프롬프트, 한 번에",
-      "body": "모든 모델에 똑같은 프롬프트를 한 번만 보내고(원샷), 중간에 고쳐 달라고 하지 않습니다. 녹화도 같은 브라우저·같은 입력 스크립트로 찍습니다."
+     "name": "Gemini (GIF, Gemini Omni)",
+     "family": "Gemini"
     },
     {
-      "title": "이름을 가린 AI 심사, 자기 표는 빼고 다시 본다",
-      "body": "결과물은 A·B·C·D로 섞은 시트로 심사합니다. 심사위원이 선수이기도 하면 자기 결과에 준 점수를 뺀 순위도 함께 공개합니다."
-    },
-    {
-      "title": "프롬프트·결과물·녹화 전부 공개",
-      "body": "점수만 보여 주지 않습니다. 프롬프트 원문, 모델이 만든 파일 그대로, 녹화 영상, 심사 답변을 결과 사이트에 올립니다. 추정치는 추정이라고 적습니다."
-    },
-    {
-      "title": "점수보다 먼저: 둘 다 같은 도구를 썼나?",
-      "body": "15편에서 GPT는 명령 실행·브라우저로 자기 결과를 보고 고쳤고 Claude는 화면을 못 봤습니다. 같은 도구를 주자 순위가 뒤집혔습니다. 비교 전에 도구·설정·지침 파일부터 맞춥니다."
+     "name": "ChatGPT Images 2.6",
+     "family": "GPT"
     }
-  ],
-  "entries": [
+   ],
+   "takeaway": "2편 챗GPT GIF 프롬프트를 그대로 제미나이에 넣었더니, 제미나이는 무엇을 시켜도 640×360·30장·3초로 고정된 부드러운 영상 GIF를 줬고, 챗GPT는 프레임 수·비율을 시키는 대로 맞췄습니다. 유명인 사진은 제미나이만 거절했습니다.",
+   "highlights": [
+    "제미나이: 항상 30장·3초·640×360 (비율은 16:9·9:16만)",
+    "챗GPT: 8~24장, 프롬프트대로 비율·프레임",
+    "생성 시간: 제미나이 한 개 45~51초 · 챗GPT 25~50초",
+    "함정: 모드를 4 Hydrogen에 고정하면 GIF 대신 HTML 코드"
+   ],
+   "tags": [
+    "GIF",
+    "같은 프롬프트",
+    "무료",
+    "이미지 생성",
+    "교실 활용"
+   ]
+  },
+  {
+   "id": "ep16-webgl2-rematch",
+   "episode": 16,
+   "date": "2026-11-20",
+   "status": "11/20 07:00 공개",
+   "title": "'Opus 이겼다'던 Gemini 4 Neon, 이름 가리고 붙였더니 꼴찌… 구글 자랑 데모로 재대결하자 반전 (vs GPT-6.2 Sol)",
+   "youtube": "https://youtu.be/V39EiW1V1tQ",
+   "site": "https://techkwon.github.io/neon-webgl-rematch/",
+   "links": [],
+   "type": "모델 대결",
+   "models": [
     {
-      "id": "ep17-gemini-gif",
-      "episode": 17,
-      "date": "2026-11-23",
-      "status": "11/23 공개",
-      "title": "충격, 제미나이로 GIF를 만들 수 있었어? 그것도 무료로 (챗GPT랑 같은 프롬프트로 비교)",
-      "youtube": "https://youtu.be/EK36slCjo2I",
-      "site": "https://techkwon.github.io/gemini-vs-chatgpt-gif/",
-      "links": [],
-      "type": "기능 비교",
-      "models": [
-        {
-          "name": "Gemini (GIF, Gemini Omni)",
-          "family": "Gemini"
-        },
-        {
-          "name": "ChatGPT Images 2.6",
-          "family": "GPT"
-        }
-      ],
-      "takeaway": "2편 챗GPT GIF 프롬프트를 그대로 제미나이에 넣었더니, 제미나이는 무엇을 시켜도 640×360·30장·3초로 고정된 부드러운 영상 GIF를 줬고, 챗GPT는 프레임 수·비율을 시키는 대로 맞췄습니다. 유명인 사진은 제미나이만 거절했습니다.",
-      "highlights": [
-        "제미나이: 항상 30장·3초·640×360 (비율은 16:9·9:16만)",
-        "챗GPT: 8~24장, 프롬프트대로 비율·프레임",
-        "생성 시간: 제미나이 한 개 45~51초 · 챗GPT 25~50초",
-        "함정: 모드를 4 Hydrogen에 고정하면 GIF 대신 HTML 코드"
-      ],
-      "tags": [
-        "GIF",
-        "같은 프롬프트",
-        "무료",
-        "이미지 생성",
-        "교실 활용"
-      ]
+     "name": "Gemini 4 Neon",
+     "family": "Gemini"
     },
     {
-      "id": "ep16-webgl2-rematch",
-      "episode": 16,
-      "date": "2026-11-20",
-      "status": "11/20 07:00 공개",
-      "title": "'Opus 이겼다'던 Gemini 4 Neon, 이름 가리고 붙였더니 꼴찌… 구글 자랑 데모로 재대결하자 반전 (vs GPT-6.2 Sol)",
-      "youtube": "https://youtu.be/V39EiW1V1tQ",
-      "site": "https://techkwon.github.io/neon-webgl-rematch/",
-      "links": [],
-      "type": "모델 대결",
-      "models": [
-        {
-          "name": "Gemini 4 Neon",
-          "family": "Gemini"
-        },
-        {
-          "name": "Gemini 4 Hydrogen",
-          "family": "Gemini"
-        },
-        {
-          "name": "Claude Sonnet 5.5",
-          "family": "Claude"
-        },
-        {
-          "name": "GPT-6.2 Sol",
-          "family": "GPT"
-        }
-      ],
-      "takeaway": "내 WebGL2 과제 5판에선 Neon이 꼴찌(자기 표 포함)였고, 구글이 발표 글에서 자랑한 데모 3개로 다시 붙이자 Neon이 Hydrogen은 이겼지만 1위는 GPT-6.2 Sol이었습니다.",
-      "highlights": [
-        "1부 내 과제 5판: Sonnet 60 · Sol 54 · Hydrogen 49 · Neon 37",
-        "2부 구글 데모 3판: Sol 37 · Sonnet 31 · Neon 29 · Hydrogen 23",
-        "8판 합계: Sonnet 91 · Sol 91 · Hydrogen 72 · Neon 66",
-        "비용 합계: Sol $5.52 · Hydrogen $7.32 · Neon $15.04 · Sonnet $17.30"
-      ],
-      "tags": [
-        "원샷 대결",
-        "블라인드 심사",
-        "WebGL2",
-        "비용",
-        "자기 표 제외"
-      ]
+     "name": "Gemini 4 Hydrogen",
+     "family": "Gemini"
     },
     {
-      "id": "ep15-gpt62",
-      "episode": 15,
-      "date": "2026-11-18",
-      "status": "공개",
-      "title": "GPT-6.2 Astra·GPT-6.2 Sol vs Claude Fable 5.2, 게임 대결 (API값 30만원어치) 4달러 Sol이 이겼는데 반칙이었다",
-      "youtube": "https://youtu.be/PSdTcyct-RQ",
-      "site": "https://techkwon.github.io/gpt62-oneshot-bench/",
-      "links": [],
-      "type": "모델 대결",
-      "models": [
-        {
-          "name": "GPT-6.2 Astra",
-          "family": "GPT"
-        },
-        {
-          "name": "GPT-6.2 Sol",
-          "family": "GPT"
-        },
-        {
-          "name": "Claude Fable 5.2",
-          "family": "Claude"
-        },
-        {
-          "name": "Claude Opus 5.5",
-          "family": "Claude"
-        },
-        {
-          "name": "GPT-6.1 Sol",
-          "family": "GPT"
-        }
-      ],
-      "takeaway": "1라운드는 Sol이 1위였지만, Claude에게도 명령 실행·브라우저·같은 스킬을 준 3라운드에서는 Fable 5.2가 1위로 뒤집혔습니다.",
-      "highlights": [
-        "1라운드 합계: Sol 40 · Astra 31 · Fable 30 · Opus 19",
-        "3라운드(같은 도구): Fable 47 · Opus 30 · Sol 27 · Astra 16",
-        "7편 과제 재대결: Astra 72로 1위",
-        "1라운드 비용 합계: Sol $4.18 · Fable $51.38"
-      ],
-      "tags": [
-        "원샷 대결",
-        "블라인드 심사",
-        "비용",
-        "도구 사용",
-        "자기 표 제외"
-      ]
+     "name": "Claude Sonnet 5.5",
+     "family": "Claude"
     },
     {
-      "id": "ep14-handwriting-font",
-      "episode": 14,
-      "date": "2026-11-17",
-      "status": "공개",
-      "title": "손글씨 사진 한 장이 한글 폰트 11,172자로, 그런데 AI 하나가 반칙 (Gemini 4 Hydrogen)",
-      "youtube": "https://youtu.be/duhWPNo_IZE",
-      "site": null,
-      "links": [],
-      "type": "모델 대결",
-      "models": [
-        {
-          "name": "Gemini 4 Hydrogen",
-          "family": "Gemini"
-        },
-        {
-          "name": "Claude Sonnet 5.5",
-          "family": "Claude"
-        },
-        {
-          "name": "GPT-6.1 Terra",
-          "family": "GPT"
-        }
-      ],
-      "takeaway": "Hydrogen이 1위. Terra는 일본어·중국어에서 기존 폰트를 가져다 써 실격이었는데, 블라인드 심사위원은 눈으로 이를 잡지 못했습니다.",
-      "highlights": [
-        "블라인드 심사 합계: Hydrogen 28 · Sonnet 26 · Terra 18",
-        "자기 표 빼면: Hydrogen 20 · Sonnet 18 · Terra 14"
-      ],
-      "tags": [
-        "원샷 대결",
-        "블라인드 심사",
-        "자기 표 제외",
-        "실격"
-      ]
-    },
-    {
-      "id": "ep13-claude-mods",
-      "episode": 13,
-      "date": "2026-11-16",
-      "status": "공개",
-      "title": "클로드 앱 배경이 움직인다, 말 한 줄로 만든 테마 3개 드려요",
-      "youtube": "https://youtu.be/P4_nn8so9tc",
-      "site": null,
-      "links": [
-        {
-          "label": "테마 저장소 (GitHub)",
-          "url": "https://github.com/techkwon/ddalkkak-mods"
-        }
-      ],
-      "type": "도구·사용법",
-      "models": [
-        {
-          "name": "Claude Fable 5.2",
-          "family": "Claude"
-        }
-      ],
-      "takeaway": "Claude 앱 배경을 바꾸는 모드(테마)를 말로 만들어 3개 공개했습니다. 말로 만든 테마가 멈추는 문제는 반씩 지워 가며 원인을 찾았습니다.",
-      "highlights": [],
-      "tags": [
-        "튜토리얼",
-        "실패→수정"
-      ]
-    },
-    {
-      "id": "ep12-sheets-animation",
-      "episode": 12,
-      "date": "2026-11-14",
-      "status": "공개",
-      "title": "치이카와·리센느·A2O LITE가 구글시트에서 움직인다? Gemini 4 Hydrogen",
-      "youtube": "https://youtu.be/4Hj0k791VEs",
-      "site": "https://techkwon.github.io/sheets-pixel-animation/",
-      "links": [
-        {
-          "label": "코드·프롬프트 저장소 (GitHub)",
-          "url": "https://github.com/techkwon/sheets-pixel-animation"
-        }
-      ],
-      "type": "도구·사용법",
-      "models": [
-        {
-          "name": "Gemini 4 Hydrogen",
-          "family": "Gemini"
-        }
-      ],
-      "takeaway": "셀 수식만으로 움직이는 구글 시트 데모를 원샷으로 재현하고 9가지 장면으로 넓혔습니다. 3,500칸을 넘으면 초당 2장 아래로 느려집니다.",
-      "highlights": [
-        "치이카와 시트 2,432칸 전부 수식, $0.98",
-        "실측 속도 초당 약 2.2~2.7장"
-      ],
-      "tags": [
-        "원샷",
-        "비용",
-        "구글 시트"
-      ]
-    },
-    {
-      "id": "ep11-hydrogen-vs-astra",
-      "episode": 11,
-      "date": "2026-11-13",
-      "status": "공개",
-      "title": "구글이 1.5달러짜리 Astra급을 냈다? Gemini 4 Hydrogen, GPT-6 Astra랑 직접 붙여 봤습니다",
-      "youtube": "https://youtu.be/n4Cxks1eaw4",
-      "site": "https://techkwon.github.io/hydrogen-vs-astra/",
-      "links": [],
-      "type": "모델 대결",
-      "models": [
-        {
-          "name": "Gemini 4 Hydrogen",
-          "family": "Gemini"
-        },
-        {
-          "name": "GPT-6 Astra",
-          "family": "GPT"
-        },
-        {
-          "name": "Claude Sonnet 5.5",
-          "family": "Claude"
-        },
-        {
-          "name": "GPT-6.1 Terra",
-          "family": "GPT"
-        }
-      ],
-      "takeaway": "WebGL2 원샷 5과제에서 Hydrogen이 1위, 자기 표를 빼도 순위가 같았습니다. 비용은 Astra보다 적었습니다(둘 다 추정치).",
-      "highlights": [
-        "합계: Hydrogen 65 · Sonnet 57 · Astra 51 · Terra 27",
-        "자기 표 빼면: Hydrogen 48 · Sonnet 41 · Astra 37 · Terra 19",
-        "비용(추정): Hydrogen $3.68 · Astra $6.62"
-      ],
-      "tags": [
-        "원샷 대결",
-        "블라인드 심사",
-        "비용",
-        "자기 표 제외",
-        "WebGL2"
-      ]
-    },
-    {
-      "id": "ep10-token-diet",
-      "episode": 10,
-      "date": "2026-11-12",
-      "status": "공개",
-      "title": "Fable 5.2 토큰 확 줄이는 법, 제가 추천한 방법은 꼴찌였어요",
-      "youtube": "https://youtu.be/Np-CMJeJOD8",
-      "site": "https://techkwon.github.io/fable52-token-diet/",
-      "links": [],
-      "type": "도구·사용법",
-      "models": [
-        {
-          "name": "Claude Fable 5.2",
-          "family": "Claude"
-        },
-        {
-          "name": "Claude Opus 5.5",
-          "family": "Claude"
-        },
-        {
-          "name": "Claude Sonnet 5.5",
-          "family": "Claude"
-        },
-        {
-          "name": "GPT-6.1 Sol",
-          "family": "GPT"
-        },
-        {
-          "name": "Gemini 4 Carbon",
-          "family": "Gemini",
-          "role": "영상 심사"
-        }
-      ],
-      "takeaway": "Fable 5.2의 effort를 low로 낮추니 값이 약 4분의 1로 줄었습니다. 제가 추천했던 '설계와 구현 나눠 만들기'는 심사에서 꼴찌였습니다.",
-      "highlights": [
-        "쇼릴 과제 비용: Fable high $7.19 → low $1.71",
-        "정지 화면 심사 합계(96점 만점): Opus 혼자 88 · Fable low 82 · Fable high 70",
-        "나눠 만들기 셋: 28~36점"
-      ],
-      "tags": [
-        "비용",
-        "블라인드 심사",
-        "토큰"
-      ]
-    },
-    {
-      "id": "ep9-gemini-decision",
-      "episode": 9,
-      "date": "2026-11-12",
-      "status": "공개",
-      "title": "구글판 Jev 나왔다, 0점짜리 답안에 한 줄 넣었더니 만점 (Gemini Decision 1)",
-      "youtube": "https://youtu.be/De_yOE2XLng",
-      "site": "https://techkwon.github.io/fable52-oneshot-bench/decision.html",
-      "links": [],
-      "type": "모델 대결",
-      "models": [
-        {
-          "name": "Gemini Decision 1",
-          "family": "Gemini"
-        },
-        {
-          "name": "Jev 1.14",
-          "family": "기타"
-        }
-      ],
-      "takeaway": "학교 판정 업무(학폭·민원·채점)를 가상 사례로 비교했습니다. 답안에 숨긴 지시 한 줄에 Gemini가 0점짜리 답안에 만점을 줬습니다.",
-      "highlights": [
-        "프롬프트 주입 답안에 Gemini 3점(만점), 자신감 89%",
-        "240번 호출 비용: Gemini $0.0084 · Jev $0.006"
-      ],
-      "tags": [
-        "판정 API",
-        "프롬프트 주입",
-        "비용"
-      ]
-    },
-    {
-      "id": "ep8-carbon",
-      "episode": 8,
-      "date": "2026-11-11",
-      "status": "공개",
-      "title": "Fable 5.2가 졌다, 값 5분의 1짜리 Gemini 4 Carbon에게 첫 판부터 (최종 4점 차)",
-      "youtube": "https://youtu.be/XqIiNqqNp3k",
-      "site": "https://techkwon.github.io/fable52-oneshot-bench/carbon.html",
-      "links": [],
-      "type": "모델 대결",
-      "models": [
-        {
-          "name": "Gemini 4 Carbon",
-          "family": "Gemini"
-        },
-        {
-          "name": "Claude Fable 5.2",
-          "family": "Claude"
-        },
-        {
-          "name": "Claude Opus 5.5",
-          "family": "Claude"
-        },
-        {
-          "name": "GPT-6.1 Sol",
-          "family": "GPT"
-        }
-      ],
-      "takeaway": "Carbon이 첫 판을 이겼지만 최종 합계는 Fable 5.2가 4점 차로 1위. 값은 Carbon이 훨씬 쌌습니다(Carbon은 추정치).",
-      "highlights": [
-        "합계: Fable 61 · Carbon 57 · Opus 47 · GPT-6.1 Sol 35",
-        "비용: Fable $18.84 · Carbon 약 $4.01(추정)"
-      ],
-      "tags": [
-        "원샷 대결",
-        "블라인드 심사",
-        "비용",
-        "자기 표 제외"
-      ]
-    },
-    {
-      "id": "ep7-fable52",
-      "episode": 7,
-      "date": "2026-11-10",
-      "status": "공개",
-      "title": "클로드 Fable 5.2 진짜 잘할까? (Opus 5.5 · GPT-6.1 Sol 5판 승부)",
-      "youtube": "https://youtu.be/vfKM1ovff6M",
-      "site": "https://techkwon.github.io/fable52-oneshot-bench/",
-      "links": [],
-      "type": "모델 대결",
-      "models": [
-        {
-          "name": "Claude Fable 5.2",
-          "family": "Claude"
-        },
-        {
-          "name": "Claude Opus 5.5",
-          "family": "Claude"
-        },
-        {
-          "name": "GPT-6.1 Sol",
-          "family": "GPT"
-        }
-      ],
-      "takeaway": "5과제 원샷에서 Fable 5.2가 1위. 다만 셋 중 가장 오래 걸렸고, 값도 Opus의 약 3배였습니다.",
-      "highlights": [
-        "합계: Fable 34 · GPT-6.1 Sol 29 · Opus 27",
-        "자기 표 빼면: Fable 21 · Opus 17 · GPT-6.1 Sol 17",
-        "비용: Fable $18.84 · Opus $6.41"
-      ],
-      "tags": [
-        "원샷 대결",
-        "블라인드 심사",
-        "비용",
-        "자기 표 제외"
-      ]
-    },
-    {
-      "id": "ep6-free-korean-api",
-      "episode": 6,
-      "date": "2026-11-09",
-      "status": "공개",
-      "title": "바이브코딩 필수템! 국산 AI API 2개 무료로 받기 (엑사원·솔라 + 클로드 코드 연결)",
-      "youtube": "https://youtu.be/qar4U8o4IHQ",
-      "site": null,
-      "links": [],
-      "type": "도구·사용법",
-      "models": [
-        {
-          "name": "EXAONE",
-          "family": "기타"
-        },
-        {
-          "name": "Solar",
-          "family": "기타"
-        }
-      ],
-      "takeaway": "두 국산 API 키를 받아 코딩 도구에 연결했습니다. Claude Code × Solar는 앱을 완성했지만, Codex × Solar는 복잡한 작업에서 실패했습니다.",
-      "highlights": [],
-      "tags": [
-        "도구 사용",
-        "API",
-        "실패 공개"
-      ]
-    },
-    {
-      "id": "ep5-aside-computer-use",
-      "episode": 5,
-      "date": "2026-11-11",
-      "status": "공개",
-      "title": "카톡 연동 0개! AI가 화면만 보고 단톡방 정리해서 보내 줌 (Aside 컴퓨터 유즈 · 실패 5번 공개)",
-      "youtube": "https://youtu.be/gaRm_QSd8NM",
-      "site": null,
-      "links": [],
-      "type": "도구·사용법",
-      "models": [
-        {
-          "name": "GPT-6.1 Terra",
-          "family": "GPT"
-        },
-        {
-          "name": "Claude Sonnet 5.5",
-          "family": "Claude"
-        }
-      ],
-      "takeaway": "카톡 연동 없이 화면만 보고 조작하는 컴퓨터 유즈를 시험했습니다. 실패 5번을 그대로 공개했고, 이 정도 일에는 Terra·Sonnet 5.5로 충분했습니다.",
-      "highlights": [],
-      "tags": [
-        "컴퓨터 유즈",
-        "도구 사용",
-        "실패 공개"
-      ]
-    },
-    {
-      "id": "ep4-suno-mcp",
-      "episode": 4,
-      "date": "2026-11-10",
-      "status": "공개",
-      "title": "클로드 코드에 수노 MCP 연결하기! 말 한마디로 작곡 + 플로우뮤직과 블라인드 대결",
-      "youtube": "https://youtu.be/fii46bV3iQI",
-      "site": null,
-      "links": [],
-      "type": "도구·사용법",
-      "models": [
-        {
-          "name": "Suno",
-          "family": "기타"
-        },
-        {
-          "name": "Flow Music",
-          "family": "기타"
-        }
-      ],
-      "takeaway": "Claude Code에 Suno MCP를 연결해 터미널 한 줄로 작곡하고, Flow Music과 곡 순서를 섞은 3라운드 블라인드 대결을 했습니다.",
-      "highlights": [],
-      "tags": [
-        "MCP",
-        "블라인드 심사",
-        "음악"
-      ]
-    },
-    {
-      "id": "ep3-notebook-html",
-      "episode": 3,
-      "date": "2026-11-09",
-      "status": "공개",
-      "title": "제미나이 노트북 HTML 이상형 월드컵! 같은 자료로 웹페이지 10개 만들어 봤더니 (프롬프트 공개)",
-      "youtube": "https://youtu.be/O9KuTBF_HnI",
-      "site": null,
-      "links": [],
-      "type": "도구·사용법",
-      "models": [
-        {
-          "name": "Gemini 노트북 HTML",
-          "family": "Gemini"
-        }
-      ],
-      "takeaway": "같은 자료로 웹페이지 10개를 만들어 토너먼트로 비교했습니다. 요청과 다른 결과가 나온 실패작도 있었고, 대시보드는 숫자를 10배 부풀렸습니다. 숫자는 원문과 대조해야 합니다.",
-      "highlights": [],
-      "tags": [
-        "토너먼트",
-        "실패 공개",
-        "숫자 검증"
-      ]
-    },
-    {
-      "id": "ep2-chatgpt-gif",
-      "episode": 2,
-      "date": "2026-11-06",
-      "status": "공개",
-      "title": "챗GPT로 움짤 25개 직접 만들어 본 솔직 결과 (프롬프트 전부 공개)",
-      "youtube": null,
-      "site": null,
-      "links": [],
-      "type": "도구·사용법",
-      "models": [
-        {
-          "name": "ChatGPT 이미지 생성",
-          "family": "GPT"
-        }
-      ],
-      "takeaway": "말 한마디로 GIF 25개를 만들어 봤습니다. 24프레임 요청은 망가졌고, 실패를 예상한 긴 한글 문장은 오히려 성공했습니다.",
-      "highlights": [],
-      "tags": [
-        "이미지 생성",
-        "프롬프트 공개"
-      ]
-    },
-    {
-      "id": "ep1-voice-lecture",
-      "episode": 1,
-      "date": "2026-11-06",
-      "status": "공개",
-      "title": "녹음 0번, 편집 0번! 내 목소리 + 모션그래픽으로 강의 영상 자동으로 만들기 (Claude Code)",
-      "youtube": "https://youtu.be/5ALZGMO_OtA",
-      "site": null,
-      "links": [],
-      "type": "도구·사용법",
-      "models": [
-        {
-          "name": "Claude Code",
-          "family": "Claude"
-        },
-        {
-          "name": "Fish Audio",
-          "family": "기타"
-        }
-      ],
-      "takeaway": "마이크 앞에 앉지 않고, 복제한 내 목소리와 모션 그래픽으로 10분 강의 영상을 자동으로 만들었습니다. 이 시리즈 제작 방식의 출발점입니다.",
-      "highlights": [],
-      "tags": [
-        "영상 자동화",
-        "음성 복제"
-      ]
+     "name": "GPT-6.2 Sol",
+     "family": "GPT"
     }
-  ]
+   ],
+   "takeaway": "내 WebGL2 과제 5판에선 Neon이 꼴찌(자기 표 포함)였고, 구글이 발표 글에서 자랑한 데모 3개로 다시 붙이자 Neon이 Hydrogen은 이겼지만 1위는 GPT-6.2 Sol이었습니다.",
+   "highlights": [
+    "1부 내 과제 5판: Sonnet 60 · Sol 54 · Hydrogen 49 · Neon 37",
+    "2부 구글 데모 3판: Sol 37 · Sonnet 31 · Neon 29 · Hydrogen 23",
+    "8판 합계: Sonnet 91 · Sol 91 · Hydrogen 72 · Neon 66",
+    "비용 합계: Sol $5.52 · Hydrogen $7.32 · Neon $15.04 · Sonnet $17.30"
+   ],
+   "tags": [
+    "원샷 대결",
+    "블라인드 심사",
+    "WebGL2",
+    "비용",
+    "자기 표 제외"
+   ]
+  },
+  {
+   "id": "ep15-gpt62",
+   "episode": 15,
+   "date": "2026-11-18",
+   "status": "공개",
+   "title": "GPT-6.2 Astra·GPT-6.2 Sol vs Claude Fable 5.2, 게임 대결 (API값 30만원어치) 4달러 Sol이 이겼는데 반칙이었다",
+   "youtube": "https://youtu.be/PSdTcyct-RQ",
+   "site": "https://techkwon.github.io/gpt62-oneshot-bench/",
+   "links": [],
+   "type": "모델 대결",
+   "models": [
+    {
+     "name": "GPT-6.2 Astra",
+     "family": "GPT"
+    },
+    {
+     "name": "GPT-6.2 Sol",
+     "family": "GPT"
+    },
+    {
+     "name": "Claude Fable 5.2",
+     "family": "Claude"
+    },
+    {
+     "name": "Claude Opus 5.5",
+     "family": "Claude"
+    },
+    {
+     "name": "GPT-6.1 Sol",
+     "family": "GPT"
+    }
+   ],
+   "takeaway": "1라운드는 Sol이 1위였지만, Claude에게도 명령 실행·브라우저·같은 스킬을 준 3라운드에서는 Fable 5.2가 1위로 뒤집혔습니다.",
+   "highlights": [
+    "1라운드 합계: Sol 40 · Astra 31 · Fable 30 · Opus 19",
+    "3라운드(같은 도구): Fable 47 · Opus 30 · Sol 27 · Astra 16",
+    "7편 과제 재대결: Astra 72로 1위",
+    "1라운드 비용 합계: Sol $4.18 · Fable $51.38"
+   ],
+   "tags": [
+    "원샷 대결",
+    "블라인드 심사",
+    "비용",
+    "도구 사용",
+    "자기 표 제외"
+   ]
+  },
+  {
+   "id": "ep14-handwriting-font",
+   "episode": 14,
+   "date": "2026-11-17",
+   "status": "공개",
+   "title": "손글씨 사진 한 장이 한글 폰트 11,172자로, 그런데 AI 하나가 반칙 (Gemini 4 Hydrogen)",
+   "youtube": "https://youtu.be/duhWPNo_IZE",
+   "site": null,
+   "links": [],
+   "type": "모델 대결",
+   "models": [
+    {
+     "name": "Gemini 4 Hydrogen",
+     "family": "Gemini"
+    },
+    {
+     "name": "Claude Sonnet 5.5",
+     "family": "Claude"
+    },
+    {
+     "name": "GPT-6.1 Terra",
+     "family": "GPT"
+    }
+   ],
+   "takeaway": "Hydrogen이 1위. Terra는 일본어·중국어에서 기존 폰트를 가져다 써 실격이었는데, 블라인드 심사위원은 눈으로 이를 잡지 못했습니다.",
+   "highlights": [
+    "블라인드 심사 합계: Hydrogen 28 · Sonnet 26 · Terra 18",
+    "자기 표 빼면: Hydrogen 20 · Sonnet 18 · Terra 14"
+   ],
+   "tags": [
+    "원샷 대결",
+    "블라인드 심사",
+    "자기 표 제외",
+    "실격"
+   ]
+  },
+  {
+   "id": "ep13-claude-mods",
+   "episode": 13,
+   "date": "2026-11-16",
+   "status": "공개",
+   "title": "클로드 앱 배경이 움직인다, 말 한 줄로 만든 테마 3개 드려요",
+   "youtube": "https://youtu.be/P4_nn8so9tc",
+   "site": null,
+   "links": [
+    {
+     "label": "테마 저장소 (GitHub)",
+     "url": "https://github.com/techkwon/ddalkkak-mods"
+    }
+   ],
+   "type": "도구·사용법",
+   "models": [
+    {
+     "name": "Claude Fable 5.2",
+     "family": "Claude"
+    }
+   ],
+   "takeaway": "Claude 앱 배경을 바꾸는 모드(테마)를 말로 만들어 3개 공개했습니다. 말로 만든 테마가 멈추는 문제는 반씩 지워 가며 원인을 찾았습니다.",
+   "highlights": [],
+   "tags": [
+    "튜토리얼",
+    "실패→수정"
+   ]
+  },
+  {
+   "id": "ep12-sheets-animation",
+   "episode": 12,
+   "date": "2026-11-14",
+   "status": "공개",
+   "title": "치이카와·리센느·A2O LITE가 구글시트에서 움직인다? Gemini 4 Hydrogen",
+   "youtube": "https://youtu.be/4Hj0k791VEs",
+   "site": "https://techkwon.github.io/sheets-pixel-animation/",
+   "links": [
+    {
+     "label": "코드·프롬프트 저장소 (GitHub)",
+     "url": "https://github.com/techkwon/sheets-pixel-animation"
+    }
+   ],
+   "type": "도구·사용법",
+   "models": [
+    {
+     "name": "Gemini 4 Hydrogen",
+     "family": "Gemini"
+    }
+   ],
+   "takeaway": "셀 수식만으로 움직이는 구글 시트 데모를 원샷으로 재현하고 9가지 장면으로 넓혔습니다. 3,500칸을 넘으면 초당 2장 아래로 느려집니다.",
+   "highlights": [
+    "치이카와 시트 2,432칸 전부 수식, $0.98",
+    "실측 속도 초당 약 2.2~2.7장"
+   ],
+   "tags": [
+    "원샷",
+    "비용",
+    "구글 시트"
+   ]
+  },
+  {
+   "id": "ep11-hydrogen-vs-astra",
+   "episode": 11,
+   "date": "2026-11-13",
+   "status": "공개",
+   "title": "구글이 1.5달러짜리 Astra급을 냈다? Gemini 4 Hydrogen, GPT-6 Astra랑 직접 붙여 봤습니다",
+   "youtube": "https://youtu.be/n4Cxks1eaw4",
+   "site": "https://techkwon.github.io/hydrogen-vs-astra/",
+   "links": [],
+   "type": "모델 대결",
+   "models": [
+    {
+     "name": "Gemini 4 Hydrogen",
+     "family": "Gemini"
+    },
+    {
+     "name": "GPT-6 Astra",
+     "family": "GPT"
+    },
+    {
+     "name": "Claude Sonnet 5.5",
+     "family": "Claude"
+    },
+    {
+     "name": "GPT-6.1 Terra",
+     "family": "GPT"
+    }
+   ],
+   "takeaway": "WebGL2 원샷 5과제에서 Hydrogen이 1위, 자기 표를 빼도 순위가 같았습니다. 비용은 Astra보다 적었습니다(둘 다 추정치).",
+   "highlights": [
+    "합계: Hydrogen 65 · Sonnet 57 · Astra 51 · Terra 27",
+    "자기 표 빼면: Hydrogen 48 · Sonnet 41 · Astra 37 · Terra 19",
+    "비용(추정): Hydrogen $3.68 · Astra $6.62"
+   ],
+   "tags": [
+    "원샷 대결",
+    "블라인드 심사",
+    "비용",
+    "자기 표 제외",
+    "WebGL2"
+   ]
+  },
+  {
+   "id": "ep10-token-diet",
+   "episode": 10,
+   "date": "2026-11-12",
+   "status": "공개",
+   "title": "Fable 5.2 토큰 확 줄이는 법, 제가 추천한 방법은 꼴찌였어요",
+   "youtube": "https://youtu.be/Np-CMJeJOD8",
+   "site": "https://techkwon.github.io/fable52-token-diet/",
+   "links": [],
+   "type": "도구·사용법",
+   "models": [
+    {
+     "name": "Claude Fable 5.2",
+     "family": "Claude"
+    },
+    {
+     "name": "Claude Opus 5.5",
+     "family": "Claude"
+    },
+    {
+     "name": "Claude Sonnet 5.5",
+     "family": "Claude"
+    },
+    {
+     "name": "GPT-6.1 Sol",
+     "family": "GPT"
+    },
+    {
+     "name": "Gemini 4 Carbon",
+     "family": "Gemini",
+     "role": "영상 심사"
+    }
+   ],
+   "takeaway": "Fable 5.2의 effort를 low로 낮추니 값이 약 4분의 1로 줄었습니다. 제가 추천했던 '설계와 구현 나눠 만들기'는 심사에서 꼴찌였습니다.",
+   "highlights": [
+    "쇼릴 과제 비용: Fable high $7.19 → low $1.71",
+    "정지 화면 심사 합계(96점 만점): Opus 혼자 88 · Fable low 82 · Fable high 70",
+    "나눠 만들기 셋: 28~36점"
+   ],
+   "tags": [
+    "비용",
+    "블라인드 심사",
+    "토큰"
+   ]
+  },
+  {
+   "id": "ep9-gemini-decision",
+   "episode": 9,
+   "date": "2026-11-12",
+   "status": "공개",
+   "title": "구글판 Jev 나왔다, 0점짜리 답안에 한 줄 넣었더니 만점 (Gemini Decision 1)",
+   "youtube": "https://youtu.be/De_yOE2XLng",
+   "site": "https://techkwon.github.io/fable52-oneshot-bench/decision.html",
+   "links": [],
+   "type": "모델 대결",
+   "models": [
+    {
+     "name": "Gemini Decision 1",
+     "family": "Gemini"
+    },
+    {
+     "name": "Jev 1.14",
+     "family": "기타"
+    }
+   ],
+   "takeaway": "학교 판정 업무(학폭·민원·채점)를 가상 사례로 비교했습니다. 답안에 숨긴 지시 한 줄에 Gemini가 0점짜리 답안에 만점을 줬습니다.",
+   "highlights": [
+    "프롬프트 주입 답안에 Gemini 3점(만점), 자신감 89%",
+    "240번 호출 비용: Gemini $0.0084 · Jev $0.006"
+   ],
+   "tags": [
+    "판정 API",
+    "프롬프트 주입",
+    "비용"
+   ]
+  },
+  {
+   "id": "ep8-carbon",
+   "episode": 8,
+   "date": "2026-11-11",
+   "status": "공개",
+   "title": "Fable 5.2가 졌다, 값 5분의 1짜리 Gemini 4 Carbon에게 첫 판부터 (최종 4점 차)",
+   "youtube": "https://youtu.be/XqIiNqqNp3k",
+   "site": "https://techkwon.github.io/fable52-oneshot-bench/carbon.html",
+   "links": [],
+   "type": "모델 대결",
+   "models": [
+    {
+     "name": "Gemini 4 Carbon",
+     "family": "Gemini"
+    },
+    {
+     "name": "Claude Fable 5.2",
+     "family": "Claude"
+    },
+    {
+     "name": "Claude Opus 5.5",
+     "family": "Claude"
+    },
+    {
+     "name": "GPT-6.1 Sol",
+     "family": "GPT"
+    }
+   ],
+   "takeaway": "Carbon이 첫 판을 이겼지만 최종 합계는 Fable 5.2가 4점 차로 1위. 값은 Carbon이 훨씬 쌌습니다(Carbon은 추정치).",
+   "highlights": [
+    "합계: Fable 61 · Carbon 57 · Opus 47 · GPT-6.1 Sol 35",
+    "비용: Fable $18.84 · Carbon 약 $4.01(추정)"
+   ],
+   "tags": [
+    "원샷 대결",
+    "블라인드 심사",
+    "비용",
+    "자기 표 제외"
+   ]
+  },
+  {
+   "id": "ep7-fable52",
+   "episode": 7,
+   "date": "2026-11-10",
+   "status": "공개",
+   "title": "클로드 Fable 5.2 진짜 잘할까? (Opus 5.5 · GPT-6.1 Sol 5판 승부)",
+   "youtube": "https://youtu.be/vfKM1ovff6M",
+   "site": "https://techkwon.github.io/fable52-oneshot-bench/",
+   "links": [],
+   "type": "모델 대결",
+   "models": [
+    {
+     "name": "Claude Fable 5.2",
+     "family": "Claude"
+    },
+    {
+     "name": "Claude Opus 5.5",
+     "family": "Claude"
+    },
+    {
+     "name": "GPT-6.1 Sol",
+     "family": "GPT"
+    }
+   ],
+   "takeaway": "5과제 원샷에서 Fable 5.2가 1위. 다만 셋 중 가장 오래 걸렸고, 값도 Opus의 약 3배였습니다.",
+   "highlights": [
+    "합계: Fable 34 · GPT-6.1 Sol 29 · Opus 27",
+    "자기 표 빼면: Fable 21 · Opus 17 · GPT-6.1 Sol 17",
+    "비용: Fable $18.84 · Opus $6.41"
+   ],
+   "tags": [
+    "원샷 대결",
+    "블라인드 심사",
+    "비용",
+    "자기 표 제외"
+   ]
+  },
+  {
+   "id": "ep6-free-korean-api",
+   "episode": 6,
+   "date": "2026-11-09",
+   "status": "공개",
+   "title": "바이브코딩 필수템! 국산 AI API 2개 무료로 받기 (엑사원·솔라 + 클로드 코드 연결)",
+   "youtube": "https://youtu.be/qar4U8o4IHQ",
+   "site": null,
+   "links": [],
+   "type": "도구·사용법",
+   "models": [
+    {
+     "name": "EXAONE",
+     "family": "기타"
+    },
+    {
+     "name": "Solar",
+     "family": "기타"
+    }
+   ],
+   "takeaway": "두 국산 API 키를 받아 코딩 도구에 연결했습니다. Claude Code × Solar는 앱을 완성했지만, Codex × Solar는 복잡한 작업에서 실패했습니다.",
+   "highlights": [],
+   "tags": [
+    "도구 사용",
+    "API",
+    "실패 공개"
+   ]
+  },
+  {
+   "id": "ep5-aside-computer-use",
+   "episode": 5,
+   "date": "2026-11-11",
+   "status": "공개",
+   "title": "카톡 연동 0개! AI가 화면만 보고 단톡방 정리해서 보내 줌 (Aside 컴퓨터 유즈 · 실패 5번 공개)",
+   "youtube": "https://youtu.be/gaRm_QSd8NM",
+   "site": null,
+   "links": [],
+   "type": "도구·사용법",
+   "models": [
+    {
+     "name": "GPT-6.1 Terra",
+     "family": "GPT"
+    },
+    {
+     "name": "Claude Sonnet 5.5",
+     "family": "Claude"
+    }
+   ],
+   "takeaway": "카톡 연동 없이 화면만 보고 조작하는 컴퓨터 유즈를 시험했습니다. 실패 5번을 그대로 공개했고, 이 정도 일에는 Terra·Sonnet 5.5로 충분했습니다.",
+   "highlights": [],
+   "tags": [
+    "컴퓨터 유즈",
+    "도구 사용",
+    "실패 공개"
+   ]
+  },
+  {
+   "id": "ep4-suno-mcp",
+   "episode": 4,
+   "date": "2026-11-10",
+   "status": "공개",
+   "title": "클로드 코드에 수노 MCP 연결하기! 말 한마디로 작곡 + 플로우뮤직과 블라인드 대결",
+   "youtube": "https://youtu.be/fii46bV3iQI",
+   "site": null,
+   "links": [],
+   "type": "도구·사용법",
+   "models": [
+    {
+     "name": "Suno",
+     "family": "기타"
+    },
+    {
+     "name": "Flow Music",
+     "family": "기타"
+    }
+   ],
+   "takeaway": "Claude Code에 Suno MCP를 연결해 터미널 한 줄로 작곡하고, Flow Music과 곡 순서를 섞은 3라운드 블라인드 대결을 했습니다.",
+   "highlights": [],
+   "tags": [
+    "MCP",
+    "블라인드 심사",
+    "음악"
+   ]
+  },
+  {
+   "id": "ep3-notebook-html",
+   "episode": 3,
+   "date": "2026-11-09",
+   "status": "공개",
+   "title": "제미나이 노트북 HTML 이상형 월드컵! 같은 자료로 웹페이지 10개 만들어 봤더니 (프롬프트 공개)",
+   "youtube": "https://youtu.be/O9KuTBF_HnI",
+   "site": null,
+   "links": [],
+   "type": "도구·사용법",
+   "models": [
+    {
+     "name": "Gemini 노트북 HTML",
+     "family": "Gemini"
+    }
+   ],
+   "takeaway": "같은 자료로 웹페이지 10개를 만들어 토너먼트로 비교했습니다. 요청과 다른 결과가 나온 실패작도 있었고, 대시보드는 숫자를 10배 부풀렸습니다. 숫자는 원문과 대조해야 합니다.",
+   "highlights": [],
+   "tags": [
+    "토너먼트",
+    "실패 공개",
+    "숫자 검증"
+   ]
+  },
+  {
+   "id": "ep2-chatgpt-gif",
+   "episode": 2,
+   "date": "2026-11-06",
+   "status": "공개",
+   "title": "챗GPT로 움짤 25개 직접 만들어 본 솔직 결과 (프롬프트 전부 공개)",
+   "youtube": null,
+   "site": null,
+   "links": [],
+   "type": "도구·사용법",
+   "models": [
+    {
+     "name": "ChatGPT 이미지 생성",
+     "family": "GPT"
+    }
+   ],
+   "takeaway": "말 한마디로 GIF 25개를 만들어 봤습니다. 24프레임 요청은 망가졌고, 실패를 예상한 긴 한글 문장은 오히려 성공했습니다.",
+   "highlights": [],
+   "tags": [
+    "이미지 생성",
+    "프롬프트 공개"
+   ]
+  },
+  {
+   "id": "ep1-voice-lecture",
+   "episode": 1,
+   "date": "2026-11-06",
+   "status": "공개",
+   "title": "녹음 0번, 편집 0번! 내 목소리 + 모션그래픽으로 강의 영상 자동으로 만들기 (Claude Code)",
+   "youtube": "https://youtu.be/5ALZGMO_OtA",
+   "site": null,
+   "links": [],
+   "type": "도구·사용법",
+   "models": [
+    {
+     "name": "Claude Code",
+     "family": "Claude"
+    },
+    {
+     "name": "Fish Audio",
+     "family": "기타"
+    }
+   ],
+   "takeaway": "마이크 앞에 앉지 않고, 복제한 내 목소리와 모션 그래픽으로 10분 강의 영상을 자동으로 만들었습니다. 이 시리즈 제작 방식의 출발점입니다.",
+   "highlights": [],
+   "tags": [
+    "영상 자동화",
+    "음성 복제"
+   ]
+  },
+  {
+   "id": "ep18-gemini-task-connectors",
+   "episode": 18,
+   "date": "2026-11-23",
+   "status": "제작 중",
+   "title": "이제 제미나이가 캔바, 카훗, 노션, 패들렛을 마음대로 조종한다 그런데 한국은 무료라고?",
+   "youtube": "",
+   "site": "https://techkwon.github.io/gemini-task-connectors/",
+   "links": [],
+   "type": "기능 실습",
+   "models": [
+    {
+     "name": "Gemini Task (Gemini 4 Hydrogen)",
+     "family": "Gemini"
+    }
+   ],
+   "takeaway": "제미나이 웹 태스크 모드에 커스텀 커넥터(MCP)를 꽂고 @로 부르자, 요청 한 번에 캔바 8장·카훗 8문제·패들렛 보드·노션 지도안이 약 5분 20초 만에 실제로 생겼습니다. 다만 그림 속 영어, 슬라이드 번호, 패들렛 공개 설정은 사람이 고쳐야 했습니다.",
+   "highlights": [
+    "커넥터 주소 8개 · 복사 버튼",
+    "글자로 @를 쓰면 연결 안 됨 → 목록에서 골라 칩으로",
+    "승인 창 스무 번 넘게 (확인 23번)",
+    "카훗 정답 8/8 · 패들렛은 로그인 없이 글쓰기"
+   ],
+   "tags": [
+    "태스크",
+    "커스텀 커넥터",
+    "MCP",
+    "무료",
+    "교실 활용"
+   ]
+  }
+ ]
 }
